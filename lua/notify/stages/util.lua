@@ -87,7 +87,7 @@ end
 function M.get_slot_range(direction)
   local top = vim.opt.tabline:get() == "" and 0 or 1
   --- https://github.com/rcarriga/nvim-notify/issues/189
-  local top = top - 3
+  local top = top + 1
   local bottom = vim.opt.lines:get()
     - (vim.opt.cmdheight:get() + (vim.opt.laststatus:get() > 0 and 1 or 0))
   local left = 1
